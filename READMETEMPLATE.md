@@ -22,6 +22,7 @@ docker create --name=sickbeard -v /etc/localtime:/etc/localtime:ro -v <path to d
 * `-v /tv` - your tv-shows folder
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
+* `-e TZ` for timezone information eg Europe/London, etc
 
 It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it sickbeard /bin/bash`.
 
