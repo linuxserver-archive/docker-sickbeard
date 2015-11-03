@@ -45,6 +45,6 @@ Web interface is at :8081 , set paths for downloads, tv-shows to match docker ma
 
 ## Versions
 
-+ **27.10.2015:** Initial Release. 
++ **03.11.2015:** Initial Release. 
 
 
