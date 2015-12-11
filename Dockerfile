@@ -10,6 +10,8 @@ ENV APTLIST="python-cheetah"
 # install packages
 RUN apt-get update -q && \
 apt-get install $APTLIST -qy && \
+
+# clean up
 apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
 
 # Adding Custom files
