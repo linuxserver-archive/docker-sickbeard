@@ -23,7 +23,7 @@ docker create --name=sickbeard -v /etc/localtime:/etc/localtime:ro -v <path to d
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it sickbeard /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it sickbeard /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -44,7 +44,7 @@ Web interface is at :8081 , set paths for downloads, tv-shows to match docker ma
 
 
 ## Versions
-
-+ **03.11.2015:** Initial Release. 
++ **30.06.16:** Rebase to alpine for smaller image size
++ **03.11.15:** Initial Release. 
 
 

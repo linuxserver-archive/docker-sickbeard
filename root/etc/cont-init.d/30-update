@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/with-contenv bash
 
 [[ ! -d /app/sickbeard/.git ]] && (git clone git://github.com/midgetspy/Sick-Beard.git /app/sickbeard && \
 chown -R abc:abc /app /config)
