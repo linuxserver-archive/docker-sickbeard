@@ -1,4 +1,4 @@
-FROM sparklyballs/base-python-alpine
+FROM lsiobase/alpine.python
 MAINTAINER sparklyballs
 
 # set python to use utf-8 rather than ascii
