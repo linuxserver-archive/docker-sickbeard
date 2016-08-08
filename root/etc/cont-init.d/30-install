@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# install app
+[[ ! -d /app/sickbeard/.git ]] && \
+	git clone git://github.com/midgetspy/Sick-Beard.git /app/sickbeard
+
+# permissions
+chown -R abc:abc \
+	/app
