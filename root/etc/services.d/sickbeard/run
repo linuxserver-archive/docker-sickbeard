@@ -1,4 +1,5 @@
 #!/usr/bin/with-contenv bash
 
-exec s6-setuidgid abc python /app/sickbeard/SickBeard.py --datadir /config
-
+exec \
+	s6-setuidgid abc python /app/sickbeard/SickBeard.py \
+	--datadir /config
