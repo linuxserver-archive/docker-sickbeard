@@ -1,26 +1,12 @@
-FROM linuxserver/baseimage.python
-
-MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
+FROM lsiobase/alpine.python
+MAINTAINER sparklyballs
 
 # set python to use utf-8 rather than ascii
 ENV PYTHONIOENCODING="UTF-8"
 
-ENV APTLIST="python-cheetah"
+# add local files
+COPY root/ /
 
-# install packages
-RUN apt-get update -q && \
-apt-get install $APTLIST -qy && \
-
-# clean up
-apt-get clean && rm -rf /tmp/* /var/lib/apt/lists/* /var/tmp/*
-
-# Adding Custom files
-ADD init/ /etc/my_init.d/
-ADD services/ /etc/service/
-RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh
-
-# Volumes and Ports
-VOLUME /config /downloads /tv
+# ports and volumes
 EXPOSE 8081
-
-
+VOLUME /config /downloads /tv
