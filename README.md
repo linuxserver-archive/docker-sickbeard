@@ -6,10 +6,16 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/sickbeard
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickbeard.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickbeard.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickbeard)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickbeard/)
+[hub]: https://hub.docker.com/r/linuxserver/sickbeard/
 
 The ultimate PVR application that searches for and manages your TV shows
 Automatically finds new and old episodes for you and it works with your current download client!. Includes updated python ssl for newer sites like PTP etc.[Sickbeard](http://sickbeard.com/)
 
+[![sickbeard](http://wolfeden.ca/sickbeard_small.png)][sickurl]
+[sickurl]: http://sickbeard.com/
 ## Usage
 
 ```
@@ -48,7 +54,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application 
 
-Web interface is at :8081 , set paths for downloads, tv-shows to match docker mappings via the webui.
+Web interface is at `<your-ip>:8081` , set paths for downloads, tv-shows to match docker mappings via the webui.
 
 
 ## Info
@@ -56,5 +62,7 @@ Web interface is at :8081 , set paths for downloads, tv-shows to match docker ma
 * To monitor the logs of the container in realtime `docker logs -f sickbeard`.
 
 ## Versions
+
++ **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine.
 + **03.11.15:** Initial Release.
