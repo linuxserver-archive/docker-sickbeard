@@ -56,5 +56,7 @@ Web interface is at :8081 , set paths for downloads, tv-shows to match docker ma
 * To monitor the logs of the container in realtime `docker logs -f sickbeard`.
 
 ## Versions
+
++ **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine.
 + **03.11.15:** Initial Release.
