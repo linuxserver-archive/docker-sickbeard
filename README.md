@@ -14,6 +14,8 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 The ultimate PVR application that searches for and manages your TV shows
 Automatically finds new and old episodes for you and it works with your current download client!. Includes updated python ssl for newer sites like PTP etc.[Sickbeard](http://sickbeard.com/)
 
+[![sickbeard](http://wolfeden.ca/sickbeard_small.png)][sickurl]
+[sickurl]: http://sickbeard.com/
 ## Usage
 
 ```
