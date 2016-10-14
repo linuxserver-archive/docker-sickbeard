@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/sickbeard
-[![](https://images.microbadger.com/badges/image/linuxserver/sickbeard.svg)](http://microbadger.com/images/linuxserver/sickbeard "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickbeard.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickbeard.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickbeard)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickbeard/)
+[![](https://images.microbadger.com/badges/version/linuxserver/sickbeard.svg)](https://microbadger.com/images/linuxserver/sickbeard "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/sickbeard.svg)](http://microbadger.com/images/linuxserver/sickbeard "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickbeard.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickbeard.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-sickbeard)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-sickbeard/)
 [hub]: https://hub.docker.com/r/linuxserver/sickbeard/
 
 The ultimate PVR application that searches for and manages your TV shows
@@ -64,8 +64,17 @@ Web interface is at `<your-ip>:8081` , set paths for downloads, tv-shows to matc
 
 * To monitor the logs of the container in realtime `docker logs -f sickbeard`.
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' sickbeard`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/sickbeard`
+
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **10.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine.
