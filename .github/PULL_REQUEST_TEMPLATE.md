@@ -1,4 +1,4 @@
-<!--- Provide a general summary of your changes in the Title above -->
+<!--- DEPRECATED PROJECT NO POINT IN ISSUING PR'S  -->
 
 [linuxserverurl]: https://linuxserver.io
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
