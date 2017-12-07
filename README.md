@@ -3,7 +3,7 @@
 [ircurl]: https://www.linuxserver.io/irc/
 [podcasturl]: https://www.linuxserver.io/podcast/
 [appurl]: http://sickbeard.com/
-[hub]: https://hub.docker.com/r/linuxserver/sickbeard/
+[hub]: https://hub.docker.com/r/lsiocommunity/sickbeard/
 
 [![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
 
@@ -12,8 +12,10 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [IRC][ircurl] on freenode at `#linuxserver.io`
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
-# linuxserver/sickbeard
-[![](https://images.microbadger.com/badges/version/linuxserver/sickbeard.svg)](https://microbadger.com/images/linuxserver/sickbeard "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/sickbeard.svg)](https://microbadger.com/images/linuxserver/sickbeard "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/sickbeard.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/sickbeard.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-sickbeard)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-sickbeard/)
+# DEPRECATED, NO LONGER MAINTAINED AND/OR REFRESHED
+
+ # lsiocommunity/sickbeard
+[![](https://images.microbadger.com/badges/version/lsiocommunity/sickbeard.svg)](https://microbadger.com/images/lsiocommunity/sickbeard "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsiocommunity/sickbeard.svg)](https://microbadger.com/images/lsiocommunity/sickbeard "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsiocommunity/sickbeard.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsiocommunity/sickbeard.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-sickbeard)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-sickbeard/)
 
 The ultimate PVR application that searches for and manages your TV shows
 Automatically finds new and old episodes for you and it works with your current download client!. Includes updated python ssl for newer sites like PTP etc.[Sickbeard](http://sickbeard.com/)
@@ -30,7 +32,7 @@ docker create --name=sickbeard \
 -e PGID=<gid> -e PUID=<uid> \
 -e TZ=<timezone> \
 -p 8081:8081 \
-linuxserver/sickbeard
+lsiocommunity/sickbeard
 ```
 
 ## Parameters
@@ -77,7 +79,7 @@ Web interface is at `<your-ip>:8081` , set paths for downloads, tv-shows to matc
 
 * image version number
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/sickbeard`
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsiocommunity/sickbeard`
 
 ## Versions
 
